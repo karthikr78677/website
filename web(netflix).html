@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>netflix</title>
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+        }
+        .main{
+            background-image: url("netflix/background-image/IN-en-20241104-TRIFECTA-perspective_55263ea2-af7f-40ed-9cf0-7029a9b9baf4_large.jpg");
+            height: 140vh;
+        }
+        .header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+           height: 75px;
+          }
+        .netflix-logo{
+            height:30px;
+            margin-top:45px;
+            margin-left:30px;
+        }
+        .right-section{
+           margin-right: 28px;
+           display: flex;
+           flex-direction: row;
+        }
+        .language{
+            color: white;
+            display: flex;
+            margin-top:45px;
+            margin-left:30px;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: black;
+            
+           padding-left: 3px;
+           padding-top: 4px;
+           padding-bottom: 4px;
+           padding-right: 3px; 
+            
+        }
+        .language:hover{
+          
+            opacity:0.5;
+            cursor:pointer;
+        }
+        .signup{
+            margin-top:45px;
+            margin-left:30px;
+            background-color: rgba(255, 0, 0, 0.736);
+            color: white;
+            border-style: solid;
+            border-radius: 16px;
+            padding: 3px 2px 3px 2px;
+        }
+        .signup:hover{
+            opacity: 0.5;
+            cursor:pointer;
+        }
+        .main-box{
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        .box{
+            
+            background-color: rgba(0, 0, 0, 0.7);;
+            min-height: 707px;
+            min-width: 460px;
+            border-width: 3px;
+            border-radius: 20px;
+           }
+        .sign-details{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 55px;
+            margin-left: 50px;
+            row-gap: 40px;
+        }
+        .sign-in{
+            color: white;
+            font-size: 26px;
+        }
+        .email {
+            width:340px;
+            height: 50px;
+            
+            border-style: solid;
+            border-radius: 24px;
+        }
+        .password{
+            width:340px;
+            height: 50px;
+            
+            border-style: solid;
+            border-radius: 24px;
+
+        }
+        .email::placeholder {
+            padding-left:14px;
+            align-items: center;
+            font-size: 13px;
+        }
+        .password::placeholder{
+            padding-left:14px;
+            align-items: center;
+            font-size: 13px;
+
+        }
+        .button-sign-in{
+            color: white;
+            background-color: red;
+            height: 55px;
+            font-size: 24px;
+            margin-right: 40px;
+            border-width: 3px;
+            border-radius: 18px;
+        }
+        .button-sign-in:hover{
+            cursor:progress;
+            opacity: 0.5;
+        }
+        .or {
+            font-size: 23px;
+            color: whitesmoke;
+            margin-left: 160px;
+            
+        }
+        .use-in-code{
+           
+            background-color: rgb(228, 233, 241);
+            height:55px;
+            font-size: 20px;
+            margin-right: 40px;
+            border-width: 3px;
+            border-radius: 18px;
+        }
+        .use-in-code:hover{
+            opacity: 0.5;
+            cursor:progress;
+
+        }
+        .forget-password{
+            font-size: 23px;
+            color: whitesmoke;
+            margin-left: 110px;
+
+        }
+        .forget-password:hover{
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        .new-to-netflix{
+            color: lightgray;
+            font-size: 17px;
+
+        }
+        .sign-up-now{
+            color: white;
+            font-size: 20px;
+        }
+        .sign-up-now:hover{
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        </style>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <img class="netflix-logo" src="netflix/background-image/logo.svg">
+            <div class="right-section">
+                
+                <button class="language">LANGUAGE</button>
+                <button class="signup">signup</button>
+            </div>
+        
+        </div>
+        <div class="main-box">
+            <div class="box">
+                <div class="sign-details">
+                    <div class="sign-in">sign in</div>
+                    <input type="text" placeholder="Email or phone number" class="email">
+                    <input type="password" placeholder="password" class="password">
+                    <button class="button-sign-in" type="submit">sign in</button>
+                    <div class="or">OR</div>
+                    <button type="submit" class="use-in-code">use a sign-in code</button>
+                    <div class="forget-password">Forgot password</div>
+                    <p class="new-to-netflix">New to Netflix? <span class="sign-up-now">sign up now.</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
